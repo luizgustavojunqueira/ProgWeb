@@ -1,0 +1,44 @@
+.flag {
+  width: 500px;
+  height: 350px;
+  border: 1px solid;
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.stripe {
+  width: 33.333%;
+  height: 100%;
+}
+
+.stripe:nth-child(1) {
+  background-color: #009246;
+}
+
+.stripe:nth-child(2) {
+  background-color: white;
+}
+
+.stripe:nth-child(3) {
+  background-color: #cf2837;
+}
+
+.green {
+  background-color: #009246;
+}
+
+.white {
+  background-color: white;
+}
+
+.red{
+    background-color: #cf2837;
+}
