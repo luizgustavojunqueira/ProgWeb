@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Faça um script que recebe a altura de um degrau de uma escada e a altura que um pedreiro deseja alcançar utilizando essa escada, calcule e apresente no HTML quantos degraus ele deverá subir para atingir seu objetivo, os valores fornecidos devem ser em metros. (Trabalhar com float). -->
+    <script>
+        let alturaDegrau = parseFloat(prompt("Digite a altura de um degrau da escada em metros:"));
+        let alturaDesejada = parseFloat(prompt("Digite a altura que o pedreiro deseja alcançar em metros:"));
+        let degraus = alturaDesejada / alturaDegrau;
+        document.write(`O pedreiro deverá subir ${degraus} degraus para alcançar a altura desejada.`);
+    </script>
+</body>
+</html>

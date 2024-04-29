@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let valorTotal = parseFloat(prompt("Digite o valor total da compra:"));
+      let qtdParcelas = parseInt(
+        prompt("Digite a quantidade de parcelas a financiar:")
+      );
+      let valorParcela = 0;
+
+      if (qtdParcelas == 2) {
+        valorTotal = valorTotal * 1.03;
+      } else if (qtdParcelas == 4) {
+        valorTotal = valorTotal * 1.07;
+      }
+
+      valorParcela = valorTotal / qtdParcelas;
+
+      alert(`O valor de cada parcela é: R$ ${valorParcela.toFixed(2)}`);
+    </script>
+  </body>
+</html>
