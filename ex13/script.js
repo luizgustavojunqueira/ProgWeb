@@ -36,7 +36,6 @@ let interval;
 // - se estiver ativo, reiniciar a contagem
 // Dica: use do método 'setInterval' para executá-lo
 function start() {
-  // TODO (implementar)
   if (interval) {
     reset();
   } else {
@@ -48,7 +47,6 @@ function start() {
 // - se o cronometro estiver ativo, reiniciar contagem
 // - se estiver parado, zerar e permanecer zerado
 function reset() {
-  // TODO (implementar)
   milliseconds = 0;
   seconds = 0;
   minutes = 0;
@@ -59,7 +57,6 @@ function reset() {
 // Função executada quando o botão 'Parar' é clicado
 // - se o cronometro estiver ativo, parar na contagem atual
 function stop() {
-  // TODO (implementar)
   if (interval) {
     interval = clearInterval(interval);
   }
@@ -69,7 +66,6 @@ function stop() {
 // As próximas linhas buscam pelos respectivos espaços de hora, minuto, segundo e milissegundos
 // Basta implementar a lógica e alterar o conteúdo (innerText) com os valores
 function timer() {
-  // TODO (implementar)
   milliseconds += 10;
   updateVisualization()
 }
